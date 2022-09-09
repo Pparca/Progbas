@@ -1,0 +1,75 @@
+#include <iostream>
+#include <conio.h>
+#include <string.h>
+#include <string>
+
+using namespace std;
+int main()
+{
+    int numarticulo, año, opcion;
+    float precio_unitario;
+    string articulo, nomvideojuego, clasificación, características, trama, género, consola;
+
+    cout << "\t ***GAMEKAT*** \n";
+    cout << " 1.-Agregar Articulo \n 2.-Modificar Articulo\n 3.-Eliminar Articulo\n 4.-Lista Articulos Vigentes\n 5.-Limpiar Pantalla\n 6.-Salir\n";
+    cin >> opcion;
+
+    switch (opción)
+    {
+    case 1: //Agregar Artículo
+        cout << "Ingrese el número del artículo \n";
+        cin >> numarticulo;
+        cout << "ingrese el nombre del videojuego\n";
+        cin.ignore();//me ignora el primer espacio 
+        getline(cin, nomvideojuego); //permite ejecutar los espacios en la variable
+        cout << "ingrese el año de lanzamiento\n";
+        cin.ignore();
+        getline(cin, año);
+     cout << "Ingrese las características del artículo\n";
+        cin.ignore();
+        getline(cin, características);
+        cout << "ingrese la trama del videojuego\n";
+        cin.ignore();
+        getline(cin, trama);
+    cout << "ingrese el género del videojuego\n";
+        cin.ignore();
+        getline(cin, género);
+    cout << "ingrese la consola del videojuego\n";
+        cin.ignore();
+        getline(cin, consola);
+        cout << "ingrese el precio unitario del artículo\n";
+        cin >> precio_unitario;
+        return main();
+        break;
+
+    case 2: //Modificar Articulo
+        break;
+
+    case 3://Eliminar Articulo
+        break;
+
+    case 4: //Lista de Articulos
+        break;
+
+    case 5: //Limpiar Pantalla
+        system("cls"); //clean  se utiliza en web 
+        return main();
+        break;
+
+    case 6: //salir
+        cout << "Gracias por utilizar el programa \n";
+        break;
+
+    default:
+        cout << "ingrese una opcion correcta \n";
+        return main();
+
+    }
+
+}
+
+
+
+
+
+
